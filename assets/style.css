@@ -1,0 +1,82 @@
+:root { --ink: #172b27; --green: #24594b; --cream: #f7f5ef; --accent: #d9a85d; }
+body { color: var(--ink); background: #fff; }
+.site-nav { background: var(--ink); }
+.site-nav .container { min-height: 76px; }
+.navbar-brand { display: flex; flex-direction: column; line-height: 1; }
+.brand-name, .footer-brand { font-family: Georgia, serif; font-size: 1.35rem; }
+.brand-name span, .footer-brand span { color: var(--accent); }
+.brand-tagline { margin-top: .4rem; color: #c8d4cc; font-size: .58rem; font-weight: 700; letter-spacing: .16em; }
+.site-nav .nav-link { color: #e8eee9; font-size: .92rem; }
+.site-nav .nav-link:hover, .site-nav .nav-link:focus { color: var(--accent); }
+.btn-nav-book { padding: .65rem 1rem; color: var(--ink); background: var(--accent); font-weight: 700; }
+.btn-nav-book:hover, .btn-nav-book:focus { color: var(--ink); background: #edc782; }
+.hero { color: white; background: linear-gradient(115deg, #172b27, #24594b); overflow: hidden; }
+.hero-layout { min-height: 470px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(2rem, 6vw, 5rem); padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.hero-copy { padding: 1rem 0; }
+.hero-copy h1 { max-width: 540px; }
+.hero p.lead { max-width: 580px; color: #e8eee9; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; }
+.hero-text-link, .story-link { color: #fff; font-weight: 700; text-decoration: none; }
+.hero-text-link:hover, .story-link:hover { color: var(--accent); }
+.hero-hours { margin: 2.2rem 0 0; color: #d1ddd5; font-size: .72rem; font-weight: 700; letter-spacing: .1em; }
+.hero-hours span { color: var(--accent); }
+.hero-photo { position: relative; height: 340px; border-radius: 8px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.24); }
+.hero-photo::after { position: absolute; inset: 45% 0 0; content: ""; background: linear-gradient(transparent, rgba(17,32,27,.78)); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero-photo figcaption { position: absolute; z-index: 1; right: 1.5rem; bottom: 1.35rem; left: 1.5rem; display: flex; flex-direction: column; gap: .3rem; color: white; }
+.hero-photo figcaption span { color: #f2cf94; font-size: .7rem; font-weight: 800; letter-spacing: .16em; }
+.hero-photo figcaption strong { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 500; }
+.eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .16em; }
+.menu-section { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+.section-title { font-family: Georgia, serif; font-weight: 700; }
+.menu-section .section-title, .story-copy .section-title, .visit-section .section-title { font-size: 2.35rem; }
+.menu-note { font-size: .9rem; }
+.btn-primary { background: var(--green); border-color: var(--green); }
+.btn-primary:hover, .btn-primary:focus { background: var(--ink); border-color: var(--ink); }
+.dish-card { overflow: hidden; border: 1px solid #e7e8e2; border-radius: 8px; background: var(--cream); }
+.dish-image { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .35s ease; }
+.dish-card:hover .dish-image { transform: scale(1.04); }
+.dish-copy { padding: 1.25rem; }
+.dish-meta { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1rem; }
+.dish-rating { display: inline-flex; align-items: center; gap: .4rem; color: var(--green); font-size: .9rem; font-weight: 700; }
+.dish-rating span:first-child { color: var(--accent); letter-spacing: 0; }
+.dish-price { color: var(--ink); font-size: 1.05rem; }
+.story-section { padding: 5rem 0; background: var(--cream); }
+.story-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: center; gap: clamp(2rem, 7vw, 6rem); }
+.story-photo { height: 360px; overflow: hidden; border-radius: 8px; }
+.story-photo img { width: 100%; height: 100%; object-fit: cover; }
+.story-copy > p:not(.eyebrow) { max-width: 510px; margin: 1.25rem 0; color: #52615b; line-height: 1.8; }
+.story-link { color: var(--green); }
+.story-link:hover { color: #a65f38; }
+.reservation-panel { margin-top: 5rem; margin-bottom: 5rem; border: 1px solid #e7e8e2; border-radius: 8px; background: #fbfaf7; }
+.form-control, .form-select { min-height: 46px; border-color: #d6dcd7; }
+textarea.form-control { min-height: auto; }
+.visit-section { padding: 4.5rem 0; color: #fff; background: var(--green); }
+.visit-layout { display: grid; grid-template-columns: 1fr minmax(260px, .65fr); align-items: center; gap: 4rem; }
+.visit-section .eyebrow { color: #f2cf94; }
+.visit-section .section-title { max-width: 550px; }
+.visit-copy { max-width: 480px; color: #d9e3dc; line-height: 1.7; }
+.visit-hours { padding-left: 2rem; border-left: 1px solid rgba(255,255,255,.28); }
+.visit-hours h3 { margin-bottom: 1.25rem; font-family: Georgia, serif; font-size: 1.5rem; }
+.visit-hours p { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .7rem; color: #e2ebe5; }
+.visit-hours p strong { color: #fff; white-space: nowrap; }
+.visit-hours small { display: block; color: #c5d4ca; }
+.site-footer { padding: 2rem 0; color: #d9e3dc; background: var(--ink); }
+.footer-layout { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; }
+.footer-brand { color: #fff; text-decoration: none; }
+.footer-layout > span, .footer-layout > a:not(.footer-brand) { font-size: .9rem; }
+.footer-layout > a:not(.footer-brand) { color: #f2cf94; text-decoration: none; }
+.footer-layout small { flex-basis: 100%; color: #aebdb3; }
+@media (max-width: 767.98px) {
+	.hero-layout { grid-template-columns: 1fr; gap: 1.5rem; padding-top: 2.5rem; padding-bottom: 2.5rem; }
+	.hero-photo { height: 250px; }
+	.hero-hours { margin-top: 1.5rem; }
+	.menu-section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+	.story-section { padding: 3.5rem 0; }
+	.story-layout, .visit-layout { grid-template-columns: 1fr; gap: 2rem; }
+	.story-photo { height: 260px; }
+	.reservation-panel { margin-top: 3.5rem; margin-bottom: 3.5rem; }
+	.visit-section { padding: 3.5rem 0; }
+	.visit-hours { padding: 1.5rem 0 0; border-top: 1px solid rgba(255,255,255,.28); border-left: 0; }
+	.footer-layout { align-items: flex-start; flex-direction: column; }
+}
